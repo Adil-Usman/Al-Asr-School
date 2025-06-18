@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al Asr Academy - Quality Islamic Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Custom CSS for elements that need more styling */
+      .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .testimonial-card {
+        transition: all 0.3s ease;
+      }
+
+      .testimonial-card:hover {
+        transform: scale(1.03);
+      }
+
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      /* Animation for the floating elements */
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .floating {
+        animation: float 3s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50">
+    <!-- Top Bar -->
+    <div class="bg-green-800 text-white py-2 px-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-green-200"
+            ><i class="fas fa-phone-alt mr-1"></i> +123 456 7890</a
+          >
+          <a href="#" class="hover:text-green-200"
+            ><i class="fas fa-envelope mr-1"></i> info@alasracademy.edu</a
+          >
+        </div>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-green-200"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="hover:text-green-200"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" class="hover:text-green-200"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="hover:text-green-200"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-graduation-cap text-3xl text-green-700"></i>
+            <div>
+              <h1 class="text-xl font-bold text-green-800">Al Asr Academy</h1>
+              <p class="text-xs text-gray-600">
+                Excellence in Islamic Education
+              </p>
+            </div>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-700 focus:outline-none"
+            >
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#" class="text-green-800 font-medium hover:text-green-600"
+              >Home</a
+            >
+
+            <div class="dropdown relative">
+              <button
+                class="text-green-800 font-medium hover:text-green-600 flex items-center"
+              >
+                About <i class="fas fa-chevron-down ml-1 text-xs"></i>
+              </button>
+              <div
+                class="dropdown-menu absolute hidden bg-white shadow-lg rounded mt-2 py-2 w-48"
+              >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-green-100"
+                  >Our Vision</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-green-100"
+                  >Our Mission</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-green-100"
+                  >History</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-green-100"
+                  >Staff</a
+                >
+              </div>
+            </div>
+
+            <div class="dropdown relative">
+              <button
+                class="text-green-800 font-medium hover:text-green-600 flex items-center"
+              >
+                Academics <i class="fas fa-chevron-down ml-1 text-xs"></i>
+              </button>
+              <div
+                class="dropdown-menu absolute hidden bg-white shadow-lg rounded mt-2 py-2 w-48"
+              >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-green-100"
+                  >Curriculum</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-green-100"
+                  >Quran Program</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-green-100"
+                  >Arabic Language</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-green-100"
+                  >Islamic Studies</a
+                >
+              </div>
+            </div>
+
+            <a href="#" class="text-green-800 font-medium hover:text-green-600"
+              >Admissions</a
+            >
+            <a href="#" class="text-green-800 font-medium hover:text-green-600"
+              >Events</a
+            >
+            <a href="#" class="text-green-800 font-medium hover:text-green-600"
+              >Contact</a
+            >
+
+            <a
+              href="#"
+              class="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md font-medium transition duration-300"
+            >
+              Donate
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden pb-4">
+          <a href="#" class="block py-2 text-green-800 hover:text-green-600"
+            >Home</a
+          >
+
+          <div class="mb-2">
+            <button
+              class="flex items-center justify-between w-full py-2 text-green-800 hover:text-green-600"
+            >
+              About <i class="fas fa-chevron-down text-xs"></i>
+            </button>
+            <div class="pl-4 hidden">
+              <a href="#" class="block py-2 text-gray-700 hover:text-green-600"
+                >Our Vision</a
+              >
+              <a href="#" class="block py-2 text-gray-700 hover:text-green-600"
+                >Our Mission</a
+              >
+              <a href="#" class="block py-2 text-gray-700 hover:text-green-600"
+                >History</a
+              >
+              <a href="#" class="block py-2 text-gray-700 hover:text-green-600"
+                >Staff</a
+              >
+            </div>
+          </div>
+
+          <div class="mb-2">
+            <button
+              class="flex items-center justify-between w-full py-2 text-green-800 hover:text-green-600"
+            >
+              Academics <i class="fas fa-chevron-down text-xs"></i>
+            </button>
+            <div class="pl-4 hidden">
+              <a href="#" class="block py-2 text-gray-700 hover:text-green-600"
+                >Curriculum</a
+              >
+              <a href="#" class="block py-2 text-gray-700 hover:text-green-600"
+                >Quran Program</a
+              >
+              <a href="#" class="block py-2 text-gray-700 hover:text-green-600"
+                >Arabic Language</a
+              >
+              <a href="#" class="block py-2 text-gray-700 hover:text-green-600"
+                >Islamic Studies</a
+              >
+            </div>
+          </div>
+
+          <a href="#" class="block py-2 text-green-800 hover:text-green-600"
+            >Admissions</a
+          >
+          <a href="#" class="block py-2 text-green-800 hover:text-green-600"
+            >Events</a
+          >
+          <a href="#" class="block py-2 text-green-800 hover:text-green-600"
+            >Contact</a
+          >
+
+          <a
+            href="#"
+            class="block mt-2 bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md font-medium text-center"
+          >
+            Donate
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-20 md:py-32">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Al Asr Academy</h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+          Nurturing Future Leaders with Islamic Values and Academic Excellence
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+          <a
+            href="#"
+            class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-md font-medium transition duration-300"
+          >
+            Apply Now
+          </a>
+          <a
+            href="#"
+            class="bg-white hover:bg-gray-100 text-green-800 px-8 py-3 rounded-md font-medium transition duration-300"
+          >
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Announcement Bar -->
+    <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4">
+      <div class="container mx-auto flex items-center justify-between">
+        <p class="font-medium">
+          <i class="fas fa-exclamation-circle mr-2"></i> Admissions for
+          2023-2024 academic year are now open!
+        </p>
+        <a href="#" class="font-bold hover:underline">Apply Now →</a>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">
+            Why Choose Al Asr Academy?
+          </h2>
+          <div class="w-24 h-1 bg-green-600 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div
+            class="feature-card bg-white p-8 rounded-lg shadow-md transition duration-300"
+          >
+            <div class="text-green-700 text-5xl mb-6">
+              <i class="fas fa-quran"></i>
+            </div>
+            <h3 class="text-xl font-bold text-green-800 mb-3">
+              Quranic Education
+            </h3>
+            <p class="text-gray-600">
+              Our comprehensive Quran program includes memorization, recitation
+              with Tajweed, and understanding of the Holy Quran.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div
+            class="feature-card bg-white p-8 rounded-lg shadow-md transition duration-300"
+          >
+            <div class="text-green-700 text-5xl mb-6">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <h3 class="text-xl font-bold text-green-800 mb-3">
+              Academic Excellence
+            </h3>
+            <p class="text-gray-600">
+              We combine national curriculum standards with Islamic studies to
+              provide a well-rounded education.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="feature-card bg-white p-8 rounded-lg shadow-md transition duration-300"
+          >
+            <div class="text-green-700 text-5xl mb-6">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <h3 class="text-xl font-bold text-green-800 mb-3">
+              Character Building
+            </h3>
+            <p class="text-gray-600">
+              We focus on developing strong Islamic character, ethics, and
+              leadership skills in our students.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+            <img
+              src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
+              alt="Al Asr Academy"
+              class="rounded-lg shadow-xl w-full"
+            />
+          </div>
+          <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold text-green-800 mb-6">
+              About Our Academy
+            </h2>
+            <p class="text-gray-600 mb-4">
+              Al Asr Academy was established in 2005 with the vision to provide
+              quality Islamic education combined with academic excellence. Our
+              mission is to nurture students who are grounded in Islamic values
+              while excelling in contemporary education.
+            </p>
+            <p class="text-gray-600 mb-6">
+              We offer a unique blend of Quranic studies, Arabic language,
+              Islamic studies, and national curriculum subjects to provide a
+              comprehensive educational experience.
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                <span>Certified Teachers</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                <span>Modern Facilities</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                <span>Safe Environment</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                <span>Extracurricular Activities</span>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="inline-block bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md font-medium transition duration-300"
+            >
+              Learn More About Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">
+            Our Programs
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            We offer comprehensive educational programs for students of all ages
+          </p>
+          <div class="w-24 h-1 bg-green-600 mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Program 1 -->
+          <div
+            class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300"
+          >
+            <div class="h-48 bg-green-700 flex items-center justify-center">
+              <i class="fas fa-child text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-green-800 mb-3">
+                Kindergarten
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Our kindergarten program introduces young children to basic
+                Islamic concepts while developing their cognitive and social
+                skills.
+              </p>
+              <a href="#" class="text-green-700 font-medium hover:underline"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+
+          <!-- Program 2 -->
+          <div
+            class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300"
+          >
+            <div class="h-48 bg-green-600 flex items-center justify-center">
+              <i class="fas fa-user-graduate text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-green-800 mb-3">
+                Elementary School
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Our elementary program combines core academic subjects with
+                Quran memorization and Islamic studies.
+              </p>
+              <a href="#" class="text-green-700 font-medium hover:underline"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+
+          <!-- Program 3 -->
+          <div
+            class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300"
+          >
+            <div class="h-48 bg-green-800 flex items-center justify-center">
+              <i class="fas fa-users text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-green-800 mb-3">
+                Weekend School
+              </h3>
+              <p class="text-gray-600 mb-4">
+                For students attending public schools, we offer weekend Islamic
+                education programs.
+              </p>
+              <a href="#" class="text-green-700 font-medium hover:underline"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-green-800 text-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div class="p-4">
+            <div class="text-4xl font-bold mb-2">500+</div>
+            <div class="text-green-200">Students</div>
+          </div>
+          <div class="p-4">
+            <div class="text-4xl font-bold mb-2">25+</div>
+            <div class="text-green-200">Qualified Teachers</div>
+          </div>
+          <div class="p-4">
+            <div class="text-4xl font-bold mb-2">18</div>
+            <div class="text-green-200">Years of Experience</div>
+          </div>
+          <div class="p-4">
+            <div class="text-4xl font-bold mb-2">50+</div>
+            <div class="text-green-200">Huffaz Graduated</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">
+            What Parents Say
+          </h2>
+          <div class="w-24 h-1 bg-green-600 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-xl">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "Al Asr Academy has provided my children with an excellent balance
+              of Islamic and academic education. Their Quran memorization
+              program is exceptional."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="https://randomuser.me/api/portraits/women/43.jpg"
+                alt="Parent"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-green-800">Amina Khan</h4>
+                <p class="text-gray-500 text-sm">Parent of 3 students</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-xl">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "The teachers at Al Asr Academy are truly dedicated. They not only
+              teach but also serve as excellent role models for Islamic
+              character."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Parent"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-green-800">Omar Abdullah</h4>
+                <p class="text-gray-500 text-sm">Parent of 2 students</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-xl">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "I'm impressed with how my daughter has progressed in both her
+              academic subjects and Quran studies. The environment is nurturing
+              and safe."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="https://randomuser.me/api/portraits/women/65.jpg"
+                alt="Parent"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-green-800">Fatima Rahman</h4>
+                <p class="text-gray-500 text-sm">Parent of 1 student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-12">
+          <div>
+            <h2 class="text-3xl font-bold text-green-800 mb-2">
+              Upcoming Events
+            </h2>
+            <div class="w-24 h-1 bg-green-600"></div>
+          </div>
+          <a href="#" class="text-green-700 font-medium hover:underline"
+            >View All Events →</a
+          >
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Event 1 -->
+          <div
+            class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition duration-300"
+          >
+            <div class="h-48 bg-green-100 flex items-center justify-center">
+              <div class="text-center p-4">
+                <div class="text-4xl font-bold text-green-800">15</div>
+                <div class="text-green-700 font-medium">June 2023</div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-green-800 mb-2">
+                Annual Quran Competition
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Our yearly Quran recitation and memorization competition for all
+                grade levels.
+              </p>
+              <div class="flex items-center text-gray-500 text-sm">
+                <i class="fas fa-clock mr-2"></i>
+                <span>9:00 AM - 2:00 PM</span>
+              </div>
+              <div class="flex items-center text-gray-500 text-sm mt-2">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>School Auditorium</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+          <div
+            class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition duration-300"
+          >
+            <div class="h-48 bg-green-100 flex items-center justify-center">
+              <div class="text-center p-4">
+                <div class="text-4xl font-bold text-green-800">22</div>
+                <div class="text-green-700 font-medium">June 2023</div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-green-800 mb-2">
+                Parent-Teacher Conference
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Meet with teachers to discuss your child's progress and
+                achievements.
+              </p>
+              <div class="flex items-center text-gray-500 text-sm">
+                <i class="fas fa-clock mr-2"></i>
+                <span>3:00 PM - 6:00 PM</span>
+              </div>
+              <div class="flex items-center text-gray-500 text-sm mt-2">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>Classrooms</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 3 -->
+          <div
+            class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition duration-300"
+          >
+            <div class="h-48 bg-green-100 flex items-center justify-center">
+              <div class="text-center p-4">
+                <div class="text-4xl font-bold text-green-800">30</div>
+                <div class="text-green-700 font-medium">June 2023</div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-green-800 mb-2">
+                Graduation Ceremony
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Celebrating our graduating students and their achievements.
+              </p>
+              <div class="flex items-center text-gray-500 text-sm">
+                <i class="fas fa-clock mr-2"></i>
+                <span>5:00 PM - 8:00 PM</span>
+              </div>
+              <div class="flex items-center text-gray-500 text-sm mt-2">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>Community Center</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-green-700 text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Join Our Academy?
+        </h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Give your child the gift of quality Islamic education combined with
+          academic excellence.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+          <a
+            href="#"
+            class="bg-white hover:bg-gray-100 text-green-800 px-8 py-3 rounded-md font-medium transition duration-300"
+          >
+            Apply Now
+          </a>
+          <a
+            href="#"
+            class="bg-transparent hover:bg-green-800 border-2 border-white text-white px-8 py-3 rounded-md font-medium transition duration-300"
+          >
+            Schedule a Visit
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">
+            Our Gallery
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Moments from Al Asr Academy
+          </p>
+          <div class="w-24 h-1 bg-green-600 mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
+              alt="School Activity"
+              class="w-full h-full object-cover hover:scale-110 transition duration-500"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Quran Class"
+              class="w-full h-full object-cover hover:scale-110 transition duration-500"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="School Event"
+              class="w-full h-full object-cover hover:scale-110 transition duration-500"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Graduation"
+              class="w-full h-full object-cover hover:scale-110 transition duration-500"
+            />
+          </div>
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="#"
+            class="inline-block bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md font-medium transition duration-300"
+          >
+            View More Photos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+            <h2 class="text-3xl font-bold text-green-800 mb-6">Contact Us</h2>
+            <p class="text-gray-600 mb-6">
+              We'd love to hear from you! Reach out to us with any questions
+              about our programs, admissions, or to schedule a visit.
+            </p>
+
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="text-green-700 mr-4 mt-1">
+                  <i class="fas fa-map-marker-alt text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-green-800 mb-1">Address</h4>
+                  <p class="text-gray-600">
+                    123 Islamic Way, Knowledge City, 12345
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="text-green-700 mr-4 mt-1">
+                  <i class="fas fa-phone-alt text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-green-800 mb-1">Phone</h4>
+                  <p class="text-gray-600">+123 456 7890</p>
+                  <p class="text-gray-600">+123 456 7891 (Admissions)</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="text-green-700 mr-4 mt-1">
+                  <i class="fas fa-envelope text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-green-800 mb-1">Email</h4>
+                  <p class="text-gray-600">info@alasracademy.edu</p>
+                  <p class="text-gray-600">admissions@alasracademy.edu</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="text-green-700 mr-4 mt-1">
+                  <i class="fas fa-clock text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-green-800 mb-1">Office Hours</h4>
+                  <p class="text-gray-600">
+                    Monday - Friday: 8:00 AM - 4:00 PM
+                  </p>
+                  <p class="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:w-1/2">
+            <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold text-green-800 mb-6">
+                Send Us a Message
+              </h3>
+              <form>
+                <div class="mb-4">
+                  <label for="name" class="block text-gray-700 font-medium mb-2"
+                    >Your Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    for="email"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    for="phone"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    for="subject"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Subject</label
+                  >
+                  <select
+                    id="subject"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
+                  >
+                    <option>General Inquiry</option>
+                    <option>Admissions</option>
+                    <option>Donations</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+
+                <div class="mb-6">
+                  <label
+                    for="message"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md font-medium transition duration-300"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256018546!2d-73.9878449240373!3d40.74844097138961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1689876446705!5m2!1sen!2sus"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <!-- About Column -->
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <i class="fas fa-graduation-cap text-3xl text-green-300"></i>
+              <div>
+                <h3 class="text-xl font-bold">Al Asr Academy</h3>
+                <p class="text-sm text-green-200">
+                  Excellence in Islamic Education
+                </p>
+              </div>
+            </div>
+            <p class="text-green-200 mb-4">
+              Providing quality Islamic education combined with academic
+              excellence since 2005.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-green-300 hover:text-white"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-green-300 hover:text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-green-300 hover:text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-green-300 hover:text-white"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-green-200 hover:text-white">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-green-200 hover:text-white">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-green-200 hover:text-white"
+                  >Academics</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-green-200 hover:text-white"
+                  >Admissions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-green-200 hover:text-white">Events</a>
+              </li>
+              <li>
+                <a href="#" class="text-green-200 hover:text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Programs -->
+          <div>
+            <h4 class="text-lg font-bold mb-4">Programs</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-green-200 hover:text-white"
+                  >Kindergarten</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-green-200 hover:text-white"
+                  >Elementary School</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-green-200 hover:text-white"
+                  >Middle School</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-green-200 hover:text-white"
+                  >High School</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-green-200 hover:text-white"
+                  >Weekend School</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-green-200 hover:text-white"
+                  >Summer Program</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+            <p class="text-green-200 mb-4">
+              Subscribe to our newsletter to receive updates about our programs
+              and events.
+            </p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-800"
+              />
+              <button
+                type="submit"
+                class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-r-md"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="pt-8 border-t border-green-800 text-center text-green-300">
+          <p>&copy; 2023 Al Asr Academy. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fixed bottom-8 right-8">
+      <a
+        href="#"
+        class="floating bg-green-700 hover:bg-green-800 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg"
+      >
+        <i class="fas fa-comment-alt text-xl"></i>
+      </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button
+      id="back-to-top"
+      class="fixed bottom-8 right-24 bg-green-700 hover:bg-green-800 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hidden"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+
+      // Mobile submenu toggle
+      document.querySelectorAll("#mobile-menu button").forEach((button) => {
+        button.addEventListener("click", function () {
+          const submenu = this.nextElementSibling;
+          submenu.classList.toggle("hidden");
+          const icon = this.querySelector("i");
+          if (submenu.classList.contains("hidden")) {
+            icon.classList.remove("fa-chevron-up");
+            icon.classList.add("fa-chevron-down");
+          } else {
+            icon.classList.remove("fa-chevron-down");
+            icon.classList.add("fa-chevron-up");
+          }
+        });
+      });
+
+      // Back to top button
+      window.addEventListener("scroll", function () {
+        const backToTopButton = document.getElementById("back-to-top");
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.remove("hidden");
+        } else {
+          backToTopButton.classList.add("hidden");
+        }
+      });
+
+      document
+        .getElementById("back-to-top")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+      // Form submission (example)
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Thank you for your message! We will get back to you soon.");
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
